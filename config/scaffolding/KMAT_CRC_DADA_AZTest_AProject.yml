@@ -7,6 +7,19 @@ packages:
   gitUrl: https://github.com/karthikbm
   gitUsername: karthikbm
   gitBranch: main
+- name: WmCloudStreams
+  version: 12.1.0
+  wpmServer: https://packages.webmethods.io
+  wpmRegistry: licensed
+services:
+- serviceName: project.kmat_crc_dada_aztest_a.KMAT_CRC_DADA_AZTest_AProject.project_kmat_crc_dada_aztest_a_KMAT_CRC_DADA_AZTest_AProject_DADAKMATSFREST.connections:CRC_DADA_SF_REST_ConnA
+  packages:
+  - name: KMAT_CRC_DADA_AZTest_AProject
+    version: "1.0"
+  - name: WmCloudStreams
+    version: 12.1.0.0.80
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
 configurationVariables:
   jdbc.SAP TxStore Pool.maxConns: "10"
   jdbcfunc.SAPTxStore.failFastMode: false
