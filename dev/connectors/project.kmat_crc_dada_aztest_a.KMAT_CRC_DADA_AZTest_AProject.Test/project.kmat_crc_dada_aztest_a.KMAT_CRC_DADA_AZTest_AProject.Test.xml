@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rest-connector xmlns="http://www.webmethods.com/cloudstreams/metadata/handler/model" id="project.kmat_crc_dada_aztest_a.KMAT_CRC_DADA_AZTest_AProject.Test" version="1.0" name="Test" displayName="Test">
+    <connections>
+        <connection type="sagcloud" name="testconnection" displayName="testconnection">
+            <groups>
+                <group type="connection" name="connection" displayName="Connection">
+                    <description>Define the required connection configurations to initiate communication with the SaaS provider.</description>
+                    <fields>
+                        <field isRequired="true" isEncrypted="false" isHidden="false" isArray="false" defaultValue="https://www.google.com" name="cn.providerUrl" displayName="Server URL">
+                            <description>The native provider endpoint target for the connection configuration</description>
+                        </field>
+                    </fields>
+                </group>
+                <group type="oauth_v20" name="oauth_v20" displayName="OAuth V2.0">
+                    <description>Define configurations needed for the OAuth version 2.0 authentication scheme.</description>
+                    <fields/>
+                </group>
+            </groups>
+        </connection>
+    </connections>
+    <services>
+        <service xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="RESTServiceType" endpoint="${cn.providerUrl}" name="testservice" displayName="testservice">
+            <documentModel packageName="." nsName="project.kmat_crc_dada_aztest_a.KMAT_CRC_DADA_AZTest_AProject.Test.testservice.doctypes" useInlineModel="false"/>
+            <resources>
+                <resource method="GET" path="/test" type="SIMPLE" tag="dsadasas" name="getdsadasas" displayName="getdsadasas">
+                    <mappings/>
+                    <parameters>
+                        <parameter name="q" isRequired="true" style="QUERYSTRING_PARAM" defaultValue="1"/>
+                    </parameters>
+                    <responses>
+                        <response name="querSresp" code="200" messageFormatterType="application/octet+idataoref" builderType="application/json" documentRef="project.kmat_crc_dada_aztest_a.KMAT_CRC_DADA_AZTest_AProject.Test.testservice.doctypes:querSresp" excludeRoot="true" dimension="0"/>
+                    </responses>
+                </resource>
+            </resources>
+        </service>
+    </services>
+</rest-connector>
