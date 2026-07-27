@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<services>
+    <cloudstreamsCollectionKeys serviceName="WmCloudStreams.RestVS">
+        <servicesKeys>
+            <keyDetails collectionKey="project.kmat_crc_dada_aztest_a.KMAT_CRC_DADA_AZTest_AProject.project_kmat_crc_dada_aztest_a_KMAT_CRC_DADA_AZTest_AProject_DADAKMATSFREST.operations.actions:CRC_CustAction" connectorServiceName="project.kmat_crc_dada_aztest_a.KMAT_CRC_DADA_AZTest_AProject.project_kmat_crc_dada_aztest_a_KMAT_CRC_DADA_AZTest_AProject_DADAKMATSFREST.operations.actions:CRC_CustAction"/>
+        </servicesKeys>
+    </cloudstreamsCollectionKeys>
+</services>
