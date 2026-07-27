@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="node_type">CloudConnectionNode</value>
+  <value name="node_subtype">unknown</value>
+  <value name="node_nsName">project.kmat_crc_dada_aztest_a.KMAT_CRC_DADA_AZTest_AProject.project_kmat_crc_dada_aztest_a_KMAT_CRC_DADA_AZTest_AProject_DADAKMATSFREST.connections:CRC_DADA_SF_REST_ConnA</value>
+  <value name="node_pkg">KMAT_CRC_DADA_AZTest_AProject</value>
+  <value name="is_public">false</value>
+  <value name="cloudNodeVersion">1</value>
+  <record name="cloudNodeProperties" javaclass="com.wm.util.Values">
+    <number name="connectionNodeVersion" type="Integer">1</number>
+    <value name="connectorID">project.kmat_crc_dada_aztest_a.KMAT_CRC_DADA_AZTest_AProject.DADAKMATSFREST</value>
+    <value name="providerName">KMAT_CRC_DADA_AZTest_AProject</value>
+    <value name="providerConnectionType">sagcloud</value>
+    <record name="connectionGroupProperties" javaclass="com.wm.util.Values">
+      <value name="cn.providerUrl">https://ibmcom-6a-dev-ed.develop.my.salesforce.com</value>
+      <value name="cn.retryCount">1</value>
+      <value name="cn.socketStaleCheck">true</value>
+      <value name="cn.tcpNoDelay">false</value>
+      <value name="cn.enableCompression">false</value>
+      <value name="cn.keepAliveInterval">-1</value>
+      <value name="oauth.consumerId">3MVG9k02hQhyUgQBhHW7bjnVtd8d5DxX.1lm96DeCknkk3SoXT9Q2qZndpZZsabeJDnCDDs_dc.wYYQZLqS8C</value>
+      <value name="oauth_v20.authorizationHeaderPrefix">Bearer</value>
+      <value name="cn.reuseAddr">false</value>
+      <value name="oauth_v20.accessTokenRefreshURLRequest">Body Query String</value>
+      <value name="cn.sniServerName"></value>
+      <value name="oauth_v20.instanceURL">https://ibmcom-6a-dev-ed.develop.my.salesforce.com</value>
+      <value name="cn.enableSNI">true</value>
+      <value name="oauth_v20.refreshAccessToken">true</value>
+      <value name="cn.socketLinger">-1</value>
+      <value name="oauth_v20.accessTokenRefreshURL">https://ibmcom-6a-dev-ed.develop.my.salesforce.com/services/oauth2/token</value>
+      <value name="cn.validateAfterInactivity">1000</value>
+      <value name="cn.readTimeout">30000</value>
+      <value name="oauth.accessToken">project.kmat_crc_dada_aztest_a.KMAT_CRC_DADA_AZTest_AProject.project_kmat_crc_dada_aztest_a_KMAT_CRC_DADA_AZTest_AProject_DADAKMATSFREST.connections:CRC_DADA_SF_REST_ConnA.oauth.accessToken</value>
+      <value name="cn.sockBuffSize">8192</value>
+      <value name="cn.hostnameVerifier">org.apache.http.conn.ssl.DefaultHostnameVerifier</value>
+      <value name="cn.idleTimeout">-1</value>
+      <value name="oauth_v20.refreshToken">project.kmat_crc_dada_aztest_a.KMAT_CRC_DADA_AZTest_AProject.project_kmat_crc_dada_aztest_a_KMAT_CRC_DADA_AZTest_AProject_DADAKMATSFREST.connections:CRC_DADA_SF_REST_ConnA.oauth_v20.refreshToken</value>
+      <value name="oauth_v20.authorizationHeaderInTokenRefresh">false</value>
+      <value name="cn.retryIfRequestSentOk">true</value>
+      <value name="oauth_v20.accessTokenRefreshCustomESBService"></value>
+      <value name="cn.connectTimeout">30000</value>
+      <value name="oauth.consumerSecret">project.kmat_crc_dada_aztest_a.KMAT_CRC_DADA_AZTest_AProject.project_kmat_crc_dada_aztest_a_KMAT_CRC_DADA_AZTest_AProject_DADAKMATSFREST.connections:CRC_DADA_SF_REST_ConnA.oauth.consumerSecret</value>
+    </record>
+    <array name="passmanHandles" type="value" depth="1">
+      <value>project.kmat_crc_dada_aztest_a.KMAT_CRC_DADA_AZTest_AProject.project_kmat_crc_dada_aztest_a_KMAT_CRC_DADA_AZTest_AProject_DADAKMATSFREST.connections:CRC_DADA_SF_REST_ConnA.oauth.accessToken</value>
+      <value>project.kmat_crc_dada_aztest_a.KMAT_CRC_DADA_AZTest_AProject.project_kmat_crc_dada_aztest_a_KMAT_CRC_DADA_AZTest_AProject_DADAKMATSFREST.connections:CRC_DADA_SF_REST_ConnA.oauth_v20.refreshToken</value>
+      <value>project.kmat_crc_dada_aztest_a.KMAT_CRC_DADA_AZTest_AProject.project_kmat_crc_dada_aztest_a_KMAT_CRC_DADA_AZTest_AProject_DADAKMATSFREST.connections:CRC_DADA_SF_REST_ConnA.oauth.consumerSecret</value>
+    </array>
+    <record name="connectionManagerProperties" javaclass="com.wm.util.Values">
+      <value name="expireTimeout">1000</value>
+      <value name="timeoutType">auto</value>
+      <value name="minimumPoolSize">1</value>
+      <value name="blockTimeout">1000</value>
+      <value name="sessionExpiry">0</value>
+      <value name="poolIncrementSize">1</value>
+      <value name="startupRetryCount">0</value>
+      <value name="poolable">true</value>
+      <value name="startupBackoffSecs">10</value>
+      <value name="maximumPoolSize">10</value>
+    </record>
+    <array name="formattableFields" type="value" depth="1">
+    </array>
+    <value name="connectionEnabled">true</value>
+  </record>
+</Values>
