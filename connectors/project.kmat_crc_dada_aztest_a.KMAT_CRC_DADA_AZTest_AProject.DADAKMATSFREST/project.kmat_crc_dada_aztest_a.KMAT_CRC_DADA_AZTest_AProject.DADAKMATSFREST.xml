@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rest-connector xmlns="http://www.webmethods.com/cloudstreams/metadata/handler/model" id="project.kmat_crc_dada_aztest_a.KMAT_CRC_DADA_AZTest_AProject.DADAKMATSFREST" version="1.0" name="DADAKMATSFREST" displayName="DADAKMATSFREST">
+    <connections>
+        <connection type="sagcloud" name="dADAKMATSFRESTconnection" displayName="dADAKMATSFRESTconnection">
+            <groups>
+                <group type="connection" name="connection" displayName="Connection">
+                    <description>Define the required connection configurations to initiate communication with the SaaS provider.</description>
+                    <fields>
+                        <field isRequired="true" isEncrypted="false" isHidden="false" isArray="false" defaultValue="https://ibmcom-6a-dev-ed.develop.my.salesforce.com" name="cn.providerUrl" displayName="Server URL">
+                            <description>The native provider endpoint target for the connection configuration</description>
+                        </field>
+                    </fields>
+                </group>
+                <group type="oauth_v20" name="oauth_v20" displayName="OAuth V2.0">
+                    <description>Define configurations needed for the OAuth version 2.0 authentication scheme.</description>
+                    <fields/>
+                </group>
+            </groups>
+        </connection>
+    </connections>
+    <services>
+        <service xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="RESTServiceType" endpoint="${cn.providerUrl}" name="dadakmatsfrestservice" displayName="dadakmatsfrestservice">
+            <documentModel packageName="." nsName="project.kmat_crc_dada_aztest_a.KMAT_CRC_DADA_AZTest_AProject.DADAKMATSFREST.dadakmatsfrestservice.doctypes" useInlineModel="false"/>
+            <resources>
+                <resource method="GET" path="/services/data/v60.0/query" type="SIMPLE" tag="queryCRMAccts" name="getqueryCRMAccts" displayName="getqueryCRMAccts">
+                    <mappings/>
+                    <parameters>
+                        <parameter name="q" isRequired="true" style="QUERYSTRING_PARAM" defaultValue="Select Id,Name from Account"/>
+                    </parameters>
+                    <responses>
+                        <response name="queryCRMAccts" code="200-299" messageFormatterType="application/octet+idataoref" builderType="application/json" documentRef="project.kmat_crc_dada_aztest_a.KMAT_CRC_DADA_AZTest_AProject.DADAKMATSFREST.dadakmatsfrestservice.doctypes:queryCRMAccts" excludeRoot="true" dimension="0"/>
+                    </responses>
+                </resource>
+            </resources>
+        </service>
+    </services>
+</rest-connector>
